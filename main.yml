@@ -1,0 +1,11 @@
+- hosts: prod
+  vars:
+    ctnMysql: "mySql"
+    ctnWordpress: "wordpress"
+    ntwWordpress: "wordpress_network"
+    volDb: "db"
+    exposePort: "8080"
+  become: true
+  roles:
+    - docker_role
+    - role_wordpress
