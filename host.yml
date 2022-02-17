@@ -5,6 +5,8 @@ prod:
   hosts:
     AnsibleWorker01:
       ansible_host: "172.31.91.22"
+    AnsibleWorker02:
+      ansible_host: "172.31.89.30"
 master:
    vars:
      ansible_connection: local
